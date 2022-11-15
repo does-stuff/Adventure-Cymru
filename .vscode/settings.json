@@ -1,0 +1,11 @@
+{
+  "liveServer.settings.root": "./src/routes",
+  "liveServer.settings.mount": [["/", "./src"]],
+  "liveSassCompile.settings.formats": [
+    {
+      "format": "expanded",
+      "extensionName": ".css",
+      "savePath": "/src/css"
+    }
+  ]
+}

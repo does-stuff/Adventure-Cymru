@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Playfair+Display:wght@400..900&display=swap");
+
+$serif: "Playfair Display", serif;
+$sans-serif: "Manrope", sans-serif;
+
+$heading-line-height: 1.2em;
+$para-line-height: 1.45em;
+
+h1 {
+  font-family: $serif;
+  font-size: 2.75rem;
+  font-weight: 800;
+  line-height: $heading-line-height;
+}
+
+h2 {
+  font-family: $serif;
+  font-size: 2.5rem;
+  font-weight: 800;
+  line-height: $heading-line-height;
+}
+
+h3 {
+  font-family: $serif;
+  font-size: 2.25rem;
+  font-weight: 800;
+  line-height: $heading-line-height;
+}
+
+h4 {
+  font-family: $serif;
+  font-size: 2rem;
+  font-weight: 800;
+  line-height: $heading-line-height;
+}
+
+h5 {
+  font-family: $serif;
+  font-size: 1.75rem;
+  font-weight: 700;
+  line-height: $heading-line-height;
+}
+
+h6 {
+  font-family: $serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: $heading-line-height;
+}
+
+p {
+  font-family: $sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: $para-line-height;
+  margin: 0.15em 0;
+}
+
+a.btn {
+  font-family: $sans-serif;
+  font-weight: 650;
+  text-decoration: none;
+  padding: 6px 16px;
+  transition: all 0.25s ease;
+  color: $white;
+  background-color: $blue;
+
+  &:hover {
+    font-weight: 800;
+  }
+
+  &.secondary {
+    background: none;
+    box-shadow: 0 0 0 4px inset $blue;
+    color: $black; // transition: all 0.25s ease;
+
+    &:hover {
+      box-shadow: 0 0 0 18px inset $blue;
+      color: $white;
+    }
+  }
+
+  &.unavailable {
+    background: none;
+    box-shadow: 0 0 0 4px inset $error;
+    color: $error;
+
+    &:hover {
+      box-shadow: 0 0 0 18px inset $error;
+      color: $white;
+    }
+  }
+}
+
+// button {
+//   font-family: $sans-serif;
+//   border: none;
+//   cursor: pointer;
+//   height: fit-content;
+//   // padding: $button-padding;
+
+//   text-transform: uppercase;
+//   font-weight: 600;
+
+//   a {
+//     padding: $button-padding;
+//     background-color: rgba(255, 0, 0, 0.25);
+//   }
+// }
