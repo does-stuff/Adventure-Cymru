@@ -1,0 +1,12 @@
+{
+  "name": "venture-cymru",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/Morgan-GB/_Venture_Cymru",
+  "author": "Morgan Jones <me@sweetuk.net>",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "sass": "^1.56.1"
+  }
+}
