@@ -2,3 +2,29 @@
 @import "abstracts/resets";
 @import "abstracts/text_styling";
 @import "abstracts/utility";
+@import "nav";
+
+body {
+  background-color: $white;
+  color: $black;
+}
+
+::selection {
+  background-color: $light-blue;
+}
+
+.content {
+  width: $content-width;
+  margin: 0 auto;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 15rem;
+  margin-bottom: 0.75rem;
+  text-align: center;
+  background-color: $light-blue;
+}

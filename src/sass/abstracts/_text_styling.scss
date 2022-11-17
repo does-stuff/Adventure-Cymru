@@ -48,6 +48,15 @@ h6 {
   line-height: $heading-line-height;
 }
 
+.super-title {
+  font-family: $sans-serif;
+  text-transform: uppercase;
+  font-weight: 900;
+  opacity: 0.5;
+  font-size: 0.5rem;
+  letter-spacing: 0.25em;
+}
+
 p {
   font-family: $sans-serif;
   font-size: 1rem;
@@ -56,7 +65,19 @@ p {
   margin: 0.15em 0;
 }
 
+a {
+  color: $blue;
+  font-weight: 550;
+  transition: font-weight 0.25s ease;
+
+  &:hover {
+    font-weight: 575;
+  }
+}
+
 a.btn {
+  display: block;
+  width: fit-content;
   font-family: $sans-serif;
   font-weight: 650;
   text-decoration: none;
@@ -64,17 +85,21 @@ a.btn {
   transition: all 0.25s ease;
   color: $white;
   background-color: $blue;
+  text-transform: uppercase;
+  margin: 0.15em 0;
 
-  &:hover {
+  &:hover,
+  &:focus {
     font-weight: 800;
   }
 
   &.secondary {
     background: none;
-    box-shadow: 0 0 0 4px inset $blue;
-    color: $black; // transition: all 0.25s ease;
+    box-shadow: 0 0 0 3px inset $blue;
+    color: $blue;
 
-    &:hover {
+    &:hover,
+    &:focus {
       box-shadow: 0 0 0 18px inset $blue;
       color: $white;
     }
@@ -82,28 +107,13 @@ a.btn {
 
   &.unavailable {
     background: none;
-    box-shadow: 0 0 0 4px inset $error;
+    box-shadow: 0 0 0 3px inset $error;
     color: $error;
 
-    &:hover {
+    &:hover,
+    &:focus {
       box-shadow: 0 0 0 18px inset $error;
       color: $white;
     }
   }
 }
-
-// button {
-//   font-family: $sans-serif;
-//   border: none;
-//   cursor: pointer;
-//   height: fit-content;
-//   // padding: $button-padding;
-
-//   text-transform: uppercase;
-//   font-weight: 600;
-
-//   a {
-//     padding: $button-padding;
-//     background-color: rgba(255, 0, 0, 0.25);
-//   }
-// }
