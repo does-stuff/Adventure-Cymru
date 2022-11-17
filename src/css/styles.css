@@ -12,6 +12,7 @@ h1 {
   font-size: 2.75rem;
   font-weight: 800;
   line-height: 1.2em;
+  margin: 0.25em 0;
 }
 
 h2 {
@@ -19,6 +20,7 @@ h2 {
   font-size: 2.5rem;
   font-weight: 800;
   line-height: 1.2em;
+  margin: 0.25em 0;
 }
 
 h3 {
@@ -26,6 +28,7 @@ h3 {
   font-size: 2.25rem;
   font-weight: 800;
   line-height: 1.2em;
+  margin: 0.25em 0;
 }
 
 h4 {
@@ -33,6 +36,7 @@ h4 {
   font-size: 2rem;
   font-weight: 800;
   line-height: 1.2em;
+  margin: 0.25em 0;
 }
 
 h5 {
@@ -40,6 +44,7 @@ h5 {
   font-size: 1.75rem;
   font-weight: 700;
   line-height: 1.2em;
+  margin: 0.25em 0;
 }
 
 h6 {
@@ -47,6 +52,7 @@ h6 {
   font-size: 1.5rem;
   font-weight: 700;
   line-height: 1.2em;
+  margin: 0.25em 0;
 }
 
 .super-title {
@@ -63,7 +69,7 @@ p {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.45em;
-  margin: 0.15em 0;
+  margin: 0.5em 0;
 }
 
 a {
@@ -142,12 +148,16 @@ a.btn.unavailable:hover, a.btn.unavailable:focus {
     flex-direction: column;
   }
 }
+.light-bg {
+  background-color: red;
+}
+
 .navbar {
   z-index: 9999;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  background-color: #c7c1f4;
+  background-color: #98a3ec;
   height: 48px;
 }
 
@@ -183,11 +193,11 @@ body {
 }
 
 ::-moz-selection {
-  background-color: #c7c1f4;
+  background-color: #98a3ec;
 }
 
 ::selection {
-  background-color: #c7c1f4;
+  background-color: #98a3ec;
 }
 
 .content {
@@ -203,5 +213,5 @@ header {
   min-height: 15rem;
   margin-bottom: 0.75rem;
   text-align: center;
-  background-color: #c7c1f4;
+  background-color: #98a3ec;
 }/*# sourceMappingURL=styles.css.map */
