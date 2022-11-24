@@ -2,7 +2,7 @@
   z-index: 9999;
   position: sticky;
   top: 0;
-  background-color: $light-blue;
+  background-color: lighten($blue, 20%);
   // background-color: red;
   height: 48px;
 }
@@ -27,10 +27,11 @@
 
   &:hover {
     font-weight: 700;
+    color: darken($blue, 25%);
   }
 
   &.active {
     font-weight: 800;
-    color: $blue;
+    color: darken($blue, 10%);
   }
 }

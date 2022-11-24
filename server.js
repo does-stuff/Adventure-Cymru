@@ -4,7 +4,7 @@ import { join } from "path";
 
 const PORT = 5000;
 
-const server = createServer(async (req, res) => {
+createServer(async (req, res) => {
   try {
     if (req.url.startsWith("/css"))
       return await getFileFromFolder(res, req.url, "text/css");
@@ -34,7 +34,9 @@ const server = createServer(async (req, res) => {
   }
 
   res.end();
-}).listen(PORT);
+}).listen(PORT, () => {
+  console.log(`Listening at http://localhost:${PORT}`);
+});
 
 function parseRouteToHTML(route) {
   // If index page

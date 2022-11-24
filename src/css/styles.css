@@ -59,15 +59,16 @@ h6 {
   font-family: "Manrope", sans-serif;
   text-transform: uppercase;
   font-weight: 900;
-  opacity: 0.5;
+  color: rgba(21, 20, 29, 0.5);
   font-size: 0.5rem;
   letter-spacing: 0.25em;
 }
 
-p {
+p,
+ul {
   font-family: "Manrope", sans-serif;
   font-size: 1rem;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 1.45em;
   margin: 0.5em 0;
 }
@@ -157,7 +158,7 @@ a.btn.unavailable:hover, a.btn.unavailable:focus {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  background-color: #98a3ec;
+  background-color: #bcb3f6;
   height: 48px;
 }
 
@@ -181,23 +182,42 @@ a.btn.unavailable:hover, a.btn.unavailable:focus {
 }
 .nav-link:hover {
   font-weight: 700;
+  color: #2a14b0;
 }
 .nav-link.active {
   font-weight: 800;
-  color: #6c57ec;
+  color: #4429e7;
 }
 
 body {
   background-color: #f8f8fe;
   color: #15141d;
+  overflow: overlay;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 ::-moz-selection {
-  background-color: #98a3ec;
+  background-color: #6d7de4;
+  color: #f8f8fe;
 }
 
 ::selection {
-  background-color: #98a3ec;
+  background-color: #6d7de4;
+  color: #f8f8fe;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  padding: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 3px;
+  background-color: #2a14b0;
+  mix-blend-mode: difference;
+  padding: 5px;
 }
 
 .content {
@@ -211,7 +231,36 @@ header {
   justify-content: center;
   align-items: center;
   min-height: 15rem;
-  margin-bottom: 0.75rem;
   text-align: center;
-  background-color: #98a3ec;
+  background-color: #bcb3f6;
+}
+
+article {
+  padding: 2.5rem 0;
+}
+article .content a.btn {
+  margin-top: 1.5rem !important;
+}
+
+.articles-container {
+  display: flex;
+  flex-direction: column;
+}
+.articles-container article.light-bg {
+  color: #15141d;
+  background-color: #f8f8fe;
+}
+.articles-container article.dark-bg {
+  color: #f8f8fe;
+  background-color: #15141d;
+}
+
+.main-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  margin-top: auto;
+  background-color: #bcb3f6;
+  text-align: center;
 }/*# sourceMappingURL=styles.css.map */
