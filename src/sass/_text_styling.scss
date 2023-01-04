@@ -64,12 +64,14 @@ h6 {
 }
 
 p,
-ul {
+ul,
+ol {
   font-family: $sans-serif;
   font-size: 1rem;
   font-weight: 500;
   line-height: $para-line-height;
   margin: 0.5em 0;
+  list-style-position: inside;
 }
 
 a {
