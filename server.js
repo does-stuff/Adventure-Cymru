@@ -5,76 +5,79 @@ import { join } from "path";
 const PORT = 5000;
 
 createServer(async (req, res) => {
-  try {
-    // Routes
-    let route = join("src", "routes", req.url === "/" ? "index" : req.url);
-    route = route.endsWith(".html") ? route : route + ".html";
-    let file = await readFileSync(route);
-    file = !file ? readFileSync(join(route.substring(5), "index.html")) : file;
-    res.setHeader("Content-Type", "text/html");
-    res.end(file);
-  } catch (e) {
-    res.end(e.message);
+  if (req.url === "/favicon.ico") {
+    const file = readFileSync(join("src", "public", "favicon.ico"));
+    res.write(file);
+    res.end();
+    return;
   }
-}).listen(PORT, () => console.log(`Running at http://localhost:${PORT}`));
 
-// createServer(async (req, res) => {
-//   try {
-//     if (req.url.startsWith("/css"))
-//       return await getFileFromFolder(res, req.url, "text/css");
-//     else if (req.url.startsWith("/public"))
-//       return await getFileFromFolder(res, req.url, "image");
-//     else if (req.url.startsWith("/js"))
-//       return await getFileFromFolder(res, req.url, "text/javascript");
+  // Check if accessing `css` route
+  if (req.url.startsWith("/css")) {
+    const route = join("src", req.url);
+    const file = readFileSync(route, "utf8");
+    if (!file) {
+      res.writeHead(404, { "Content-Type": "application/json" });
+      res.write(JSON.stringify({ error: "File not found" }, null, 4));
+    }
 
-//     const route = parseRouteToHTML(req.url);
-//     console.log(join("src", "routes", route));
-//     let file = await readFileSync(join("src", "routes", route) + ".html");
-//     file = file;
-//     // ? file
-//     // : await readFileSync(join("src", "routes", route, "index.html"));
+    res.writeHead(200, { "Content-Type": "text/css" });
+    res.write(file);
+    res.end();
+    return;
+  }
+  // Check if accessing `js` route
+  else if (req.url.startsWith("/js")) {
+    const route = join("src", req.url);
+    const file = readFileSync(route, "utf8");
+    if (!file) {
+      res.writeHead(404, { "Content-Type": "application/json" });
+      res.write(JSON.stringify({ error: "File not found" }, null, 4));
+    }
 
-//     res.setHeader("Content-Type", "text/html");
-//     res.write(file);
-//     res.end();
-//   } catch (e) {
-//     res.setHeader("Content-Type", "application/json");
-//     res.writeHead(404, "NOT_FOUND");
-//     res.end(
-//       JSON.stringify(
-//         {
-//           error: 404,
-//           message: `Route \`${req.url}\` not found on the server.`,
-//         },
-//         null,
-//         2
-//       )
-//     );
-//   }
+    res.writeHead(200, { "Content-Type": "application/javascript" });
+    res.write(file);
+    res.end();
+    return;
+  }
+  // Check if accessing `public` route
+  else if (req.url.startsWith("/public")) {
+    const route = join("src", req.url);
+    const file = readFileSync(route, "utf8");
+    if (!file) {
+      res.writeHead(404, { "Content-Type": "application/json" });
+      res.write(JSON.stringify({ error: "File not found" }, null, 4));
+    }
 
-//   res.end();
-// }).listen(PORT, () => {
-//   console.log(`Listening at http://localhost:${PORT}`);
-// });
+    const contentTypes = {
+      ".png": "image/png",
+      ".jpg": "image/jpeg",
+      ".jpeg": "image/jpeg",
+      ".gif": "image/gif",
+      ".svg": "image/svg+xml",
+    };
 
-// function parseRouteToHTML(route) {
-//   // If index page
-//   if (route === "/") return "index";
+    let contentType;
 
-//   // Remove slash prefix
-//   route = route.substr(1);
+    Object.keys(contentTypes).forEach((extension) => {
+      if (route.endsWith(extension)) contentType = contentTypes[extension];
+    });
 
-//   // IF route already ends with HTML (for whatever reason), return that alone
-//   if (route.endsWith(".html")) return route.substr(5);
+    res.writeHead(200, { "Content-Type": contentType });
+    res.write(file);
+    res.end();
+    return;
+  }
+  // Else, assume trying to access HTML page
+  else {
+    // Directory-based routing. All pages are folders with `index.html` inside.
+    const route = join("src", "routes", req.url, "index.html");
+    const file = await readFileSync(route, "utf8");
 
-//   // Add HTML to the end for file type
-//   return route;
-// }
-
-// async function getFileFromFolder(res, url, type) {
-//   const route = join("src", url);
-//   const file = await readFileSync(route);
-//   res.setHeader("Content-Type", type || "text/plain");
-//   res.end(file);
-//   return file;
-// }
+    res.writeHead(200, { "Content-Type": "text/html" });
+    res.write(file);
+    res.end();
+  }
+}).listen(PORT, () =>
+  console.log(`Server listening on port http://127.0.0.1:${PORT}`)
+);
