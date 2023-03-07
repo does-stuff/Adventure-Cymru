@@ -25,7 +25,9 @@
   <ul class="list">
     {#each pages as page}
       <li class="linkWrapper">
-        <a class="link" class:active={active === page.path} href={page.path}>{page.name}</a>
+        <a class="link" class:active={active === page.path} href={page.path}
+          >{page.name}</a
+        >
       </li>
     {/each}
   </ul>
@@ -38,7 +40,7 @@
     align-items: center;
     background-color: red;
     width: 100%;
-    height: 64px;
+    height: $footer-nav-height;
   }
 
   .list {

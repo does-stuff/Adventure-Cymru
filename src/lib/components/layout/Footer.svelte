@@ -11,7 +11,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 64px;
+    height: $footer-nav-height;
     background-color: red;
   }
 
