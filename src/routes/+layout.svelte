@@ -15,3 +15,15 @@
     <Footer />
   </div>
 </div>
+
+<style lang="scss">
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  .footerWrapper {
+    margin-top: auto;
+  }
+</style>
