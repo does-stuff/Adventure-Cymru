@@ -1,35 +1,38 @@
-# Venture Cymru
+# create-svelte
 
-As a part of my Year 11 GCSE I.T. course, I have to create a website for a company called "Adventure Cymru."
+Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
 
-# How to run the website
+## Creating a project
 
-1. Clone the repository
+If you're seeing this, you've probably already done this step. Congrats!
 
-```
-git clone https://github.com/Morgan-GB/Adventure_Cymru
-```
+```bash
+# create a new project in the current directory
+npm create svelte@latest
 
-2. CD into the directory
-
-```
-cd Adventure_Cymru
+# create a new project in my-app
+npm create svelte@latest my-app
 ```
 
-3. Install node modules
+## Developing
 
-```
-npm install
+Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+
+```bash
+npm run dev
+
+# or start the server and open the app in a new browser tab
+npm run dev -- --open
 ```
 
-4. Run the `server.js` file
+## Building
 
-```
-node server.js
+To create a production version of your app:
+
+```bash
+npm run build
 ```
 
-5. Go to the link printed in the terminal (example below)
+You can preview the production build with `npm run preview`.
 
-```
-Running at: http://localhost:5000
-```
+> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
