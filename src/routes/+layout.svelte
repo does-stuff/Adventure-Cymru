@@ -4,7 +4,7 @@
 </script>
 
 <div class="wrapper">
-  <div class="navWrappe">
+  <div class="navWrapper">
     <Navbar />
   </div>
   <div class="content">
