@@ -23,6 +23,10 @@
     min-height: 100vh;
   }
 
+  .content {
+    margin-top: 128px;
+  }
+
   .footerWrapper {
     margin-top: auto;
   }
