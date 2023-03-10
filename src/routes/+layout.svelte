@@ -24,7 +24,9 @@
   }
 
   .content {
+    margin: auto;
     margin-top: 128px;
+    max-width: 768px;
   }
 
   .footerWrapper {
