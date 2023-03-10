@@ -32,9 +32,13 @@
     {/each}
     <a
       href="https://github.com/morganjones-dev/Adventure-Cymru"
-      class="readmore">Read More</a
+      class="mobile readmore">Read More</a
     >
   </ul>
+  <a
+    href="https://github.com/morganjones-dev/Adventure-Cymru"
+    class="desktop readmore">Read More</a
+  >
   <button on:click={toggleNav} class="mobile burger">
     <span class="line" />
     <span class="line" />
@@ -43,6 +47,10 @@
 </nav>
 
 <style lang="scss">
+  .desktop {
+    display: none !important;
+  }
+
   .nav {
     display: grid;
     grid-template-columns: 1fr auto 1fr;
@@ -157,8 +165,8 @@
   }
 
   .readmore {
-    box-sizing: border-box;
-    border: 4px solid $accent;
+    // border: 4px solid $accent;
+    box-shadow: 0 0 0 2px rgba($accent, 0.25) inset;
     transition-property: background-color, color;
     transition: 0.25s ease-in-out;
 
@@ -167,6 +175,39 @@
     &:hover {
       background-color: $accent;
       color: $black;
+    }
+  }
+
+  @media (min-width: 876px) {
+    .nav {
+      grid-template-rows: 96px;
+      grid-template-columns: 1fr auto 1fr;
+    }
+
+    .desktop {
+      display: block !important;
+    }
+
+    .mobile {
+      display: none;
+    }
+
+    .list {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      align-self: center;
+      grid-row: 1;
+    }
+
+    .readmore {
+      grid-row: 1;
+      grid-column: 3;
+      justify-self: end;
+      margin-right: 26px;
+    }
+    .link {
+      padding: 10px 20px;
     }
   }
 </style>
