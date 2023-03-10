@@ -87,7 +87,7 @@
     width: 100%;
     background-color: $black;
     padding-bottom: 25px;
-    border-radius: 10px 0 0 10px;
+    border-radius: 0 0 10px 10px;
   }
 
   .burger {
@@ -182,6 +182,7 @@
     .nav {
       grid-template-rows: 96px;
       grid-template-columns: 1fr auto 1fr;
+      padding: 0;
     }
 
     .desktop {
@@ -204,6 +205,7 @@
       grid-row: 1;
       grid-column: 3;
       justify-self: end;
+      margin: 0;
       margin-right: 26px;
     }
     .link {
