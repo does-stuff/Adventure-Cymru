@@ -1,7 +1,7 @@
 <script lang="ts">
   import { page } from "$app/stores";
 
-  const active = "/" + ($page.url.pathname.split("/")[0] || "");
+  $: active = "/" + ($page.url.pathname.split("/").filter((x) => x)[0] || "");
 
   interface Page {
     name: string;
@@ -18,7 +18,14 @@
 
   $: navOpen = false;
   const toggleNav = () => (navOpen = !navOpen);
+
+  let innerWidth = 0;
+  $: if (innerWidth > 876) {
+    navOpen = false;
+  }
 </script>
+
+<svelte:window bind:innerWidth />
 
 <nav class="nav" class:open={navOpen}>
   <img src="/logos/character.svg" alt="Adventure Cymru logo" class="logo" />
@@ -55,10 +62,18 @@
     display: grid;
     grid-template-columns: 1fr auto 1fr;
     grid-template-rows: 96px;
+    z-index: 9999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: $black;
+    border-radius: 0 0 10px 10px;
 
     &.open {
       grid-template-columns: 1fr auto 1fr;
       grid-template-rows: 96px auto auto;
+      padding-bottom: 25px;
 
       & .list {
         display: block;
@@ -80,14 +95,6 @@
         }
       }
     }
-
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: $black;
-    padding-bottom: 25px;
-    border-radius: 0 0 10px 10px;
   }
 
   .burger {
@@ -155,6 +162,7 @@
   }
 
   .link {
+    padding: 15px 20px;
     transition-property: background-color, color;
     transition: 0.25s ease-in-out;
     &.active,
@@ -209,7 +217,7 @@
       margin-right: 26px;
     }
     .link {
-      padding: 10px 20px;
+      padding: 15px 20px;
     }
   }
 </style>
