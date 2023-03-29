@@ -1,38 +1,31 @@
-# create-svelte
+# Adventure Cymru: GCSE I.T. Project
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+This is my submission for the GCSE I.T Love to Learn project.
 
-## Creating a project
+## How to Run the Website
 
-If you're seeing this, you've probably already done this step. Congrats!
+### Prerequisites
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
+1. A working computer (Windows, macOS or Linux)
+2. [NodeJS and `npm`](https://nodejs.org/en/download)
 
-# create a new project in my-app
-npm create svelte@latest my-app
-```
+### Running the Website
 
-## Developing
+1. Either `git clone` or download this project
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+![Custom image representing how to git clone this repository](/.assets/gitclone.png)
 
-```bash
-npm run dev
+**_OR_**
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
+![Custom designed image representing how to download this repository through GitHub.](/.assets/download_graphic.png)
+<span style="text-align:center; opacity: 0.75; font-style: italic;">Press the "Download ZIP" button, then unzip the archived file that is downloaded.</span>
 
-## Building
+2. To run the website, open the folder **within a terminal** and type the following commands
 
-To create a production version of your app:
+![An image showing what commands to enter to run the website](/.assets/npm_install.png)
 
-```bash
-npm run build
-```
+3. Visit the localhost address provided in the terminal
 
-You can preview the production build with `npm run preview`.
+![An image of what the terminal *should* output after running `npm run dev`, if everything is working correctly.](/.assets/running_website.png)
 
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+<span style="text-align:center; opacity: 0.75; font-style: italic;">The address you need to visit is highlighted in green. Most terminals will allow you to control click this, however, if that does not work, enter this into your browser's URL bar.</span>
