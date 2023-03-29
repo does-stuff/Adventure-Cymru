@@ -25,11 +25,13 @@
 
   .content {
     margin: auto;
-    margin-top: 128px;
+    margin-top: 96px;
+    padding-inline: 25px;
+    width: 100%;
     max-width: 768px;
   }
 
   .footerWrapper {
-    margin-top: auto;
+    margin-top: 25px;
   }
 </style>

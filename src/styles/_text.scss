@@ -1,3 +1,5 @@
+@use "vars" as *;
+
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400..900&family=Poppins:wght@300;400;500;600;700&display=swap");
 
 h1 {
@@ -39,9 +41,23 @@ h6 {
   line-height: 1.5em;
 }
 
-p {
+p,
+ul {
   font-size: 1rem;
   font-weight: 400;
   font-family: "Poppins", sans-serif;
   line-height: 1.25em;
+}
+
+p {
+  padding-block: 5px;
+}
+
+a {
+  color: darken($accent, 55%);
+  font-weight: 500;
+
+  &:hover {
+    color: darken($accent, 45%);
+  }
 }

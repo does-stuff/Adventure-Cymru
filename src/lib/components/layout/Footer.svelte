@@ -19,6 +19,7 @@
   .content {
     font-family: "Poppins", sans-serif;
     color: white;
+    text-align: center;
 
     & a {
       color: $accent;

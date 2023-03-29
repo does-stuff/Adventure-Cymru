@@ -1,30 +1,42 @@
-<h1>Heading 1</h1>
-<h2>Heading 2</h2>
-<h3>Heading 3</h3>
-<h4>Heading 4</h4>
-<h5>Heading 5</h5>
-<h6>Heading 6</h6>
-<p>
-  Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit enim
-  labore culpa sint ad nisi Lorem pariatur mollit ex esse exercitation amet.
-  Nisi anim cupidatat excepteur officia. Reprehenderit nostrud nostrud ipsum
-  Lorem est aliquip amet voluptate voluptate dolor minim nulla est proident.
-  Nostrud officia pariatur ut officia. Sit irure elit esse ea nulla sunt ex
-  occaecat reprehenderit commodo officia dolor Lorem duis laboris cupidatat
-  officia voluptate. Culpa proident adipisicing id nulla nisi laboris ex in
-  Lorem sunt duis officia eiusmod. Aliqua reprehenderit commodo ex non excepteur
-  duis sunt velit enim. Voluptate laboris sint cupidatat ullamco ut ea
-  consectetur et est culpa et culpa duis.
-</p>
-<p>
-  Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit enim
-  labore culpa sint ad nisi Lorem pariatur mollit ex esse exercitation amet.
-  Nisi anim cupidatat excepteur officia. Reprehenderit nostrud nostrud ipsum
-  Lorem est aliquip amet voluptate voluptate dolor minim nulla est proident.
-  Nostrud officia pariatur ut officia. Sit irure elit esse ea nulla sunt ex
-  occaecat reprehenderit commodo officia dolor Lorem duis laboris cupidatat
-  officia voluptate. Culpa proident adipisicing id nulla nisi laboris ex in
-  Lorem sunt duis officia eiusmod. Aliqua reprehenderit commodo ex non excepteur
-  duis sunt velit enim. Voluptate laboris sint cupidatat ullamco ut ea
-  consectetur et est culpa et culpa duis.
-</p>
+<script>
+  import Banner from "$lib/Banner.svelte";
+
+  const d = new Date();
+  const hour = d.getHours();
+  const greetingText = (() => {
+    if (hour >= 21) return "Nos da";
+    else if (hour >= 17) return "Noswaith dda";
+    else if (hour >= 12) return "Prynhawn da";
+    else return "Bore da";
+  })();
+</script>
+
+<svelte:head>
+  <title>Adventure Cymru</title>
+</svelte:head>
+
+<Banner>
+  <h1>{greetingText}! We're Adventure Cymru.</h1>
+</Banner>
+
+<main>
+  <h2>Who are we?</h2>
+  <p>
+    <b>Adventure Cymru</b> is Wales' favourite outdoor centre. We offer a wide range
+    of activities, kite-surfing, kayaking and more.
+  </p>
+  <p>
+    Recently, Adventure Cymru won a grant! This has allowed us to run
+    residential courses and allow our visitors to experience an <b
+      >even <i>wider</i></b
+    >
+    range of activities over <b>several-day-long visits!</b> These multi-day visits
+    help build confidence and get people moving!
+  </p>
+  <p>
+    By far, our customer-favourite activity is <a href="/activities/kitesurfing"
+      >Kitesurfing</a
+    >. But, if that doesn't tickle your fancy, how about taking a look at
+    <a href="/activities">our other activities</a>?
+  </p>
+</main>
