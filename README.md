@@ -19,7 +19,7 @@ This is my submission for the GCSE I.T Love to Learn project.
 
 ![Custom designed image representing how to download this repository through GitHub.](/.assets/download_graphic.png)
 
-<p align="center" style="opacity: 0.75; font-style: italic;">Press the "Download ZIP" button, then unzip the archived file that is downloaded.</p>
+<p align="center" style="opacity: 0.75;"><i>Press the "Download ZIP" button, then unzip the archived file that is downloaded.</i></p>
 
 2. To run the website, open the folder **within a terminal** and type the following commands
 
@@ -29,4 +29,4 @@ This is my submission for the GCSE I.T Love to Learn project.
 
 ![An image of what the terminal *should* output after running `npm run dev`, if everything is working correctly.](/.assets/running_website.png)
 
-<p align="center" style="opacity: 0.75; font-style: italic;">The address you need to visit is highlighted in green. Most terminals will allow you to control click this, however, if that does not work, enter this into your browser's URL bar.</p>
+<p align="center" style="opacity: 0.75;"><i>The address you need to visit is highlighted in green. Most terminals will allow you to control click this, however, if that does not work, enter this into your browser's URL bar.</i></p>
