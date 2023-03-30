@@ -10,42 +10,30 @@
   <article class="section light">
     <h2>Analysis Log</h2>
     <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur non
-      quam odio voluptate inventore molestiae id nihil, reprehenderit animi
-      deleniti ducimus fugit rerum velit quaerat eius necessitatibus, blanditiis
-      minima dignissimos?
+      This is a document explaining how I have analysed some data from a Microsoft Excel document.
     </p>
-    <a href="/development/analysis_log" class="btn">Download</a>
+    <a href="/evidence/analysis_log.docx" class="btn" download>Download</a>
   </article>
   <article class="section dark">
-    <h2>Development Log</h2>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur non
-      quam odio voluptate inventore molestiae id nihil, reprehenderit animi
-      deleniti ducimus fugit rerum velit quaerat eius necessitatibus, blanditiis
-      minima dignissimos?
-    </p>
-    <a href="/development/development_log" class="btn">Download</a>
-  </article>
-  <article class="section light">
     <h2>Survey</h2>
     <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur non
-      quam odio voluptate inventore molestiae id nihil, reprehenderit animi
-      deleniti ducimus fugit rerum velit quaerat eius necessitatibus, blanditiis
-      minima dignissimos?
+      This is the analysed and modified survey data mentioned above.
     </p>
-    <a href="/development/survey" class="btn">Download</a>
+    <a href="/evidence/survey_data.xlsx" class="btn" download>Download</a>
+  </article>
+  <article class="section light">
+    <h2>Development Log</h2>
+    <p>
+      This documents my entire process of branding Adventure Cymru, making the animation on the <a href="/activities/kitesurfing">Kitesurfing page</a> and making this website.
+    </p>
+    <a href="/evidence/development_log.docx" class="btn" download>Download</a>
   </article>
   <article class="section dark">
-    <h2>Assets Table</h2>
+    <h2>Assets Log</h2>
     <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur non
-      quam odio voluptate inventore molestiae id nihil, reprehenderit animi
-      deleniti ducimus fugit rerum velit quaerat eius necessitatibus, blanditiis
-      minima dignissimos?
+      This is a table of all of the assets (images, etc.) used for this website.
     </p>
-    <a href="/development/assets_table" class="btn">Download</a>
+    <a href="/evidence/assets_log.docx" class="btn" download>Download</a>
   </article>
 </main>
 
