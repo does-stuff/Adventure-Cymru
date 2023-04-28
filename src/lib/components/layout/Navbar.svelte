@@ -38,12 +38,12 @@
       </li>
     {/each}
     <a
-      href="https://github.com/morganjones-dev/Adventure-Cymru"
+      href="https://github.com/does-stuff/Adventure-Cymru"
       class="mobile readmore">Read More</a
     >
   </ul>
   <a
-    href="https://github.com/morganjones-dev/Adventure-Cymru"
+    href="https://github.com/does-stuff/Adventure-Cymru"
     class="desktop readmore">Read More</a
   >
   <button on:click={toggleNav} class="mobile burger">

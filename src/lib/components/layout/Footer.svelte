@@ -1,7 +1,7 @@
 <footer class="footer">
   <div class="content">
     Designed and Developed by
-    <a href="https:/github.com/morganjones-dev/Adventure-Cymru">Morgan Jones</a>
+    <a href="https://github.com/does-stuff/Adventure-Cymru">Morgan Jones</a>
     using <a href="https://kit.svelte.dev">SvelteKit</a> and
     <a href="https://figma.com">Figma</a>.
   </div>
