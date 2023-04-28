@@ -13,7 +13,10 @@ This is my submission for the GCSE I.T Love to Learn project.
 
 1. Either `git clone` or download this project
 
-![Custom image representing how to git clone this repository](/.assets/gitclone.png)
+```
+$ git clone https://github.com/does-stuff/Adventure-Cymru
+$ cd Adventure-Cymru
+```
 
 **_OR_**
 
@@ -25,8 +28,26 @@ This is my submission for the GCSE I.T Love to Learn project.
 
 ![An image showing what commands to enter to run the website](/.assets/npm_install.png)
 
+```
+$ npm install
+$ npm run dev
+```
+
+*\*You may also use `yarn` or `bun`*
+
 3. Visit the localhost address provided in the terminal
 
-![An image of what the terminal *should* output after running `npm run dev`, if everything is working correctly.](/.assets/running_website.png)
+```
+$ npm run dev
 
-<p align="center" style="opacity: 0.75;"><i>The address you need to visit is highlighted in green. Most terminals will allow you to control click this, however, if that does not work, enter this into your browser's URL bar.</i></p>
+> adventure-cymru@0.0.1 dev
+> vite dev
+
+  VITE vx.x.x ready in xxxx ms
+
+  Local: https://localhost:5173/
+  Network: use --host to expose
+  press h to show help
+```
+
+The address you need to visit is the one containing "localhost" **(may also be 127.0.0.1)**. Most terminals will allow you to control/command click this, however, if that does not work, enter this into your browser's URL bar.
