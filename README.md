@@ -26,14 +26,12 @@ $ cd Adventure-Cymru
 
 2. To run the website, open the folder **within a terminal** and type the following commands
 
-![An image showing what commands to enter to run the website](/.assets/npm_install.png)
-
 ```
 $ npm install
 $ npm run dev
 ```
 
-*\*You may also use `yarn` or `bun`*
+_\*You may also use `yarn` or `bun`_
 
 3. Visit the localhost address provided in the terminal
 
