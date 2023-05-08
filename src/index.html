@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <link rel="icon" href="./assets/character.svg" />
+    <meta name="viewport" content="width=device-width" />
+
+    <link rel="stylesheet" href="./_layout.css" />
+    <script src="./layout.js"></script>
+
+    <title>Adventure Cymru</title>
+  </head>
+  <body>
+    <div style="display: contents">
+      <div class="__wrapper wrapper">
+        <div class="navWrapper">
+          <nav class="__navbar nav" id="nav">
+            <img
+              src="./assets/character.svg"
+              alt="Adventure Cymru logo"
+              class="logo"
+            />
+            <ul class="list">
+              <li class="linkWrapper">
+                <a href="/index.html" class="link active">Home</a>
+              </li>
+              <li class="linkWrapper">
+                <a href="/activities.html" class="link">Activities</a>
+              </li>
+              <li class="linkWrapper">
+                <a href="/development.html" class="link">Development</a>
+              </li>
+              <a
+                href="https://github.com/does-stuff/Adventure-Cymru"
+                class="mobile readmore"
+                >Read More</a
+              >
+            </ul>
+            <a
+              href="https://github.com/does-stuff/Adventure-Cymru"
+              class="desktop readmore"
+              >Read More</a
+            >
+            <button onclick="toggleNav()" class="mobile burger">
+              <span class="line"></span>
+              <span class="line"></span>
+              <span class="line"></span>
+            </button>
+          </nav>
+        </div>
+        <div class="content">
+          <header class="__banner banner">
+            <div class="banner_content">
+              <h1>Prynhawn da! We're Adventure Cymru.</h1>
+            </div>
+          </header>
+
+          <main></main>
+        </div>
+        <div class="footerWrapper">
+          <footer class="__footer footer">
+            <!-- <span>I am a Footer</span> -->
+            <div class="footer_content">
+              Designed and Developed by
+              <a href="https://github.com/does-stuff/Adventure-Cymru"
+                >Morgan Jones</a
+              >
+              using <a href="https://kit.svelte.dev">SvelteKit</a> and
+              <a href="https://figma.com">Figma</a>.
+            </div>
+          </footer>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
