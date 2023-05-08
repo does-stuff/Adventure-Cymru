@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <link rel="icon" href="../assets/character.svg" />
+    <meta name="viewport" content="width=device-width" />
+
+    <link rel="stylesheet" href="../_layout.css" />
+
+    <title>Adventure Cymru</title>
+
+    <style>
+      .blocked {
+        text-decoration: line-through;
+        cursor: not-allowed;
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div style="display: contents">
+      <div class="__wrapper wrapper">
+        <div class="navWrapper">
+          <nav class="__navbar nav" id="nav">
+            <img
+              src="../assets/character.svg"
+              alt="Adventure Cymru logo"
+              class="logo"
+            />
+            <ul class="list">
+              <li class="linkWrapper">
+                <a href="../index.html" class="link">Home</a>
+              </li>
+              <li class="linkWrapper">
+                <a href="./index.html" class="link active">Activities</a>
+              </li>
+              <li class="linkWrapper">
+                <a href="../development/index.html" class="link">Development</a>
+              </li>
+              <a
+                href="https://github.com/does-stuff/Adventure-Cymru"
+                class="mobile readmore"
+                >Read More</a
+              >
+            </ul>
+            <a
+              href="https://github.com/does-stuff/Adventure-Cymru"
+              class="desktop readmore"
+              >Read More</a
+            >
+            <button onclick="toggleNav()" class="mobile burger">
+              <span class="line"></span>
+              <span class="line"></span>
+              <span class="line"></span>
+            </button>
+          </nav>
+        </div>
+        <div class="content">
+          <header class="__banner banner">
+            <div class="banner_content">
+              <h1>Activities</h1>
+            </div>
+          </header>
+
+          <main>
+            <p>
+              Here at Adventure Cymru, we offer a wide-range of activities. You
+              can find them below!
+            </p>
+
+            <ul>
+              <li><a class="blocked" href="#/">Sailing</a></li>
+              <li><a class="blocked" href="#/">Swimming</a></li>
+              <li><a href="./kitesurfing.html">Kitesurfing</a></li>
+              <li><a class="blocked" href="#/">Canoeing</a></li>
+              <li><a class="blocked" href="#/">Kayaking</a></li>
+              <li>
+                <a class="blocked" href="#/">Paddle Boarding</a>
+              </li>
+            </ul>
+          </main>
+        </div>
+        <div class="footerWrapper">
+          <footer class="__footer footer">
+            <div class="footer_content">
+              Designed and Developed by
+              <a href="https://github.com/does-stuff/Adventure-Cymru"
+                >Morgan Jones</a
+              >
+              using <a href="https://kit.svelte.dev">SvelteKit</a> and
+              <a href="https://figma.com">Figma</a>.
+            </div>
+          </footer>
+        </div>
+      </div>
+    </div>
+    <script src="../layout.js"></script>
+  </body>
+</html>

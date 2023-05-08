@@ -8,7 +8,6 @@
     <meta name="viewport" content="width=device-width" />
 
     <link rel="stylesheet" href="./_layout.css" />
-    <script src="./layout.js"></script>
 
     <title>Adventure Cymru</title>
   </head>
@@ -24,13 +23,13 @@
             />
             <ul class="list">
               <li class="linkWrapper">
-                <a href="/index.html" class="link active">Home</a>
+                <a href="./index.html" class="link active">Home</a>
               </li>
               <li class="linkWrapper">
-                <a href="/activities.html" class="link">Activities</a>
+                <a href="./activities/index.html" class="link">Activities</a>
               </li>
               <li class="linkWrapper">
-                <a href="/development.html" class="link">Development</a>
+                <a href="./development/index.html" class="link">Development</a>
               </li>
               <a
                 href="https://github.com/does-stuff/Adventure-Cymru"
@@ -53,15 +52,35 @@
         <div class="content">
           <header class="__banner banner">
             <div class="banner_content">
-              <h1>Prynhawn da! We're Adventure Cymru.</h1>
+              <h1>
+                <span id="greeting-message">Helo!</span> We're Adventure Cymru.
+              </h1>
             </div>
           </header>
 
-          <main></main>
+          <main>
+            <h2>Who are we?</h2>
+            <p>
+              <b>Adventure Cymru</b> is Wales' favourite outdoor centre. We
+              offer a wide range of activities, kite-surfing, kayaking and more.
+            </p>
+            <p>
+              Recently, Adventure Cymru won a grant! This has allowed us to run
+              residential courses and allow our visitors to experience an
+              <b>even <i>wider</i></b> range of activities over
+              <b>several-day-long visits!</b> These multi-day visits help build
+              confidence and get people moving!
+            </p>
+            <p>
+              By far, our customer-favourite activity is
+              <a href="./activities/kitesurfing.html">Kitesurfing</a>. But, if
+              that doesn't tickle your fancy, how about taking a look at
+              <a href="./activities/index.html">our other activities</a>?
+            </p>
+          </main>
         </div>
         <div class="footerWrapper">
           <footer class="__footer footer">
-            <!-- <span>I am a Footer</span> -->
             <div class="footer_content">
               Designed and Developed by
               <a href="https://github.com/does-stuff/Adventure-Cymru"
@@ -74,5 +93,7 @@
         </div>
       </div>
     </div>
+    <script src="./index.js"></script>
+    <script src="./layout.js"></script>
   </body>
 </html>
