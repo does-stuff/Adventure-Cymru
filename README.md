@@ -16,7 +16,7 @@ This is my submission for the GCSE I.T Love to Learn project.
 1. Either `git clone` or download this project
 
 ```
-$ git clone https://github.com/does-stuff/Adventure-Cymru
+$ git clone https://github.com/morganlabs-old/Adventure-Cymru
 $ cd Adventure-Cymru
 ```
 
