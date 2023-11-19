@@ -2,6 +2,8 @@
 
 This is my submission for the GCSE I.T Love to Learn project.
 
+---
+
 ## How to Run the Website
 
 ### Prerequisites
