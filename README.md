@@ -1,6 +1,7 @@
-# Adventure Cymru: GCSE I.T. Project
+# Adventure Cymru
 
-This is my submission for the GCSE I.T Love to Learn project.
+Adventure Cymru is a ficticious company that I have been asked to create a
+website for in my Information Technology GCSE course.
 
 ---
 
@@ -50,4 +51,7 @@ $ npm run dev
   press h to show help
 ```
 
-The address you need to visit is the one containing "localhost" **(may also be 127.0.0.1)**. Most terminals will allow you to control/command click this, however, if that does not work, enter this into your browser's URL bar.
+The address you need to visit is the one containing "localhost"
+**(may also be 127.0.0.1)**. Most terminals will allow you to
+control/command+click this, however, if that does not work, enter this into
+your browser's URL bar.
